@@ -1,5 +1,5 @@
 import React from 'react';
-import { Coffee } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 export default function Navbar({ onOpenContact }) {
   return (
@@ -29,14 +29,14 @@ export default function Navbar({ onOpenContact }) {
           </a>
         </nav>
 
-        {/* Right Actions: Gen Z "Let's Catch Up ✨" Button */}
+        {/* Right Actions: Clean Button Without Emojis */}
         <div className="flex items-center gap-2 md:gap-3">
           <button
             onClick={onOpenContact}
             className="px-4 py-2 rounded-lg bg-white text-black hover:bg-zinc-200 text-xs font-medium font-space-grotesk flex items-center gap-1.5 transition-all shadow-md hover:scale-[0.98]"
           >
-            <Coffee className="h-3.5 w-3.5 text-black" />
-            <span>Let's Catch Up ✨</span>
+            <span>Let's Catch Up</span>
+            <ArrowUpRight className="h-3.5 w-3.5 text-black" />
           </button>
         </div>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Code, BrainCircuit, Coffee } from 'lucide-react';
+import { MapPin, Code, BrainCircuit, ArrowUpRight } from 'lucide-react';
 
 export default function Hero({ onOpenContact }) {
   return (
@@ -64,14 +64,14 @@ export default function Hero({ onOpenContact }) {
           </span>
         </div>
 
-        {/* Action Button & Handwritten Scribble */}
+        {/* Clean Action Button Without Emoji */}
         <div className="mt-6 sm:mt-8 flex flex-wrap items-center gap-4 sm:gap-6">
           <button
             onClick={onOpenContact}
             className="relative flex items-center justify-center gap-2 rounded-md border border-[#39393D] bg-white text-black px-5 py-2.5 sm:px-6 sm:py-3 font-medium text-xs sm:text-sm hover:bg-gray-200 transition-all transform hover:scale-[0.99]"
           >
-            <Coffee className="h-4 w-4 text-amber-700" />
-            <span>Let's Catch Up ✨</span>
+            <span>Let's Catch Up</span>
+            <ArrowUpRight className="h-4 w-4 text-black" />
           </button>
 
           <div className="flex items-center gap-1.5 text-zinc-500 hover:text-zinc-300 transition-colors select-none">

@@ -38,10 +38,10 @@ export default function ContactModal({ isOpen, onClose }) {
         {/* Modal Header */}
         <div className="mb-6">
           <h3 className="font-space-grotesk text-2xl font-bold text-white">
-            Let's Catch Up ✨
+            Let's Catch Up
           </h3>
           <p className="text-xs font-geist-mono text-zinc-400 mt-1">
-            Drop a message or let's grab a virtual coffee ☕
+            Drop a message or schedule a conversation
           </p>
         </div>
 

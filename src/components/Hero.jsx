@@ -1,15 +1,15 @@
 import React from 'react';
-import { MapPin, Code, BrainCircuit } from 'lucide-react';
+import { MapPin, Code, BrainCircuit, Coffee } from 'lucide-react';
 
 export default function Hero({ onOpenContact }) {
   return (
-    <section className="bg-[#09090B] pt-14 sm:pt-20 md:pt-28 pb-10 sm:pb-14 px-4 sm:px-6 md:px-[4%] border-b border-[#1C1C1F] relative overflow-hidden">
+    <section className="bg-[#09090B] pt-24 md:pt-32 pb-16 px-4 md:px-[4%] border-b border-[#1C1C1F] relative overflow-hidden">
       {/* Background Subtle Radial Lighting */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-blue-600/5 blur-[100px] sm:blur-[140px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto flex flex-col items-start justify-center">
         
-        {/* Mobile-optimized Status Pill */}
+        {/* Status Pill */}
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#121215] border border-[#1C1C1F] text-[11px] sm:text-xs font-geist-mono text-zinc-400 mb-4 sm:mb-6 max-w-full">
           <span className="relative flex h-2 w-2 shrink-0">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -70,7 +70,8 @@ export default function Hero({ onOpenContact }) {
             onClick={onOpenContact}
             className="relative flex items-center justify-center gap-2 rounded-md border border-[#39393D] bg-white text-black px-5 py-2.5 sm:px-6 sm:py-3 font-medium text-xs sm:text-sm hover:bg-gray-200 transition-all transform hover:scale-[0.99]"
           >
-            <span>Book a Meeting</span>
+            <Coffee className="h-4 w-4 text-amber-700" />
+            <span>Let's Catch Up ✨</span>
           </button>
 
           <div className="flex items-center gap-1.5 text-zinc-500 hover:text-zinc-300 transition-colors select-none">

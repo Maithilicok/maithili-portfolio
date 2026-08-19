@@ -38,10 +38,10 @@ export default function ContactModal({ isOpen, onClose }) {
         {/* Modal Header */}
         <div className="mb-6">
           <h3 className="font-space-grotesk text-2xl font-bold text-white">
-            Let's Connect
+            Let's Catch Up ✨
           </h3>
           <p className="text-xs font-geist-mono text-zinc-400 mt-1">
-            Book a meeting or drop a direct message
+            Drop a message or let's grab a virtual coffee ☕
           </p>
         </div>
 
@@ -99,7 +99,7 @@ export default function ContactModal({ isOpen, onClose }) {
             <textarea
               rows={3}
               required
-              placeholder="Hi Maithili, I'd like to discuss a project..."
+              placeholder="Hi Maithili, let's connect & discuss..."
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               className="w-full px-3.5 py-2.5 rounded-xl bg-black/60 border border-[#27272A] text-xs text-white placeholder-zinc-600 focus:outline-none focus:border-blue-500 transition-colors font-sans resize-none"

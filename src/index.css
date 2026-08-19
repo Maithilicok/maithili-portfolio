@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #09090B;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar matching swamii.me */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3F3F46;
+}
+
+/* Shutter Panel Animation */
+.shutter-panel {
+  animation: shutterUp 0.9s cubic-bezier(0.8, 0, 0.2, 1) forwards;
+}
+
+@keyframes shutterUp {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* Custom Glow Effects */
+.glow-card {
+  transition: all 0.3s ease;
+}
+
+.glow-card:hover {
+  box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.15);
+  border-color: #39393D;
+}

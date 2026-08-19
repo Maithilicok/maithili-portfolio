@@ -45,7 +45,7 @@ export default function ContactModal({ isOpen, onClose }) {
           </p>
         </div>
 
-        {/* Email Copy Card (Phone Number Removed) */}
+        {/* Direct Email Card */}
         <div className="mb-6">
           <div
             onClick={copyEmail}

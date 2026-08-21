@@ -9,7 +9,7 @@ export default function ContactModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   const copyEmail = () => {
-    navigator.clipboard.writeText('mmkokil2005@gmail.com');
+    navigator.clipboard.writeText('maithilicokil@gmail.com');
     setCopiedEmail(true);
     setTimeout(() => setCopiedEmail(false), 2000);
   };
@@ -17,10 +17,17 @@ export default function ContactModal({ isOpen, onClose }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
+
+    const subject = encodeURIComponent(`Portfolio Inquiry from ${formData.name}`);
+    const body = encodeURIComponent(`${formData.message}\n\n---\nFrom: ${formData.name}\nEmail: ${formData.email}`);
+    const mailtoUrl = `mailto:maithilicokil@gmail.com?subject=${subject}&body=${body}`;
+
+    window.location.href = mailtoUrl;
+
     setTimeout(() => {
       setSubmitted(false);
       onClose();
-    }, 2000);
+    }, 2500);
   };
 
   return (
@@ -50,16 +57,26 @@ export default function ContactModal({ isOpen, onClose }) {
           <div
             onClick={copyEmail}
             className="flex items-center justify-between p-3.5 rounded-xl bg-black/60 border border-[#27272A] hover:border-blue-500/50 cursor-pointer transition-all group"
+            title="Click to copy & open mail client"
           >
             <div className="flex items-center gap-3">
-              <div className="p-2 rounded-lg bg-blue-500/10 text-blue-400">
+              <a 
+                href="mailto:maithilicokil@gmail.com"
+                onClick={(e) => e.stopPropagation()}
+                className="p-2 rounded-lg bg-blue-500/10 text-blue-400 hover:bg-blue-500/20 transition-colors"
+                title="Send email directly"
+              >
                 <Mail className="h-4 w-4" />
-              </div>
+              </a>
               <div className="text-left">
                 <span className="text-[10px] font-geist-mono text-zinc-500 block">Direct Email</span>
-                <span className="text-xs font-geist-mono text-zinc-200 group-hover:text-blue-400 transition-colors">
-                  mmkokil2005@gmail.com
-                </span>
+                <a 
+                  href="mailto:maithilicokil@gmail.com"
+                  onClick={(e) => e.stopPropagation()}
+                  className="text-xs font-geist-mono text-zinc-200 group-hover:text-blue-400 transition-colors underline-offset-2 hover:underline"
+                >
+                  maithilicokil@gmail.com
+                </a>
               </div>
             </div>
             <span className="text-xs text-zinc-400 font-geist-mono">
@@ -114,7 +131,7 @@ export default function ContactModal({ isOpen, onClose }) {
             {submitted ? (
               <>
                 <Check className="h-4 w-4" />
-                <span>Message Sent!</span>
+                <span>Opening Mail Client...</span>
               </>
             ) : (
               <>

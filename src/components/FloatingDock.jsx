@@ -5,7 +5,7 @@ export default function FloatingDock({ onOpenContact }) {
   const [copied, setCopied] = useState(false);
 
   const copyEmail = () => {
-    navigator.clipboard.writeText('mmkokil2005@gmail.com');
+    navigator.clipboard.writeText('maithilicokil@gmail.com');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };

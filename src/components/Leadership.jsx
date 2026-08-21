@@ -46,13 +46,13 @@ export default function Leadership() {
     },
     {
       title: "All-Rounder Student Excellence Award",
-      org: "DYPCOE Department of Computer Engineering",
+      org: "DYPCOE Department of Information Technology",
       desc: "Recognized for exceptional technical leadership, academics, and hackathon achievements."
     },
     {
-      title: "Event Manager of the Year",
-      org: "GDGC DYPCOE Chapter",
-      desc: "Conferred for outstanding operational execution of DevSummit 2025."
+      title: "Event Manager Award",
+      org: "National Institute of Event Management (NIEM), Pune",
+      desc: "Awarded Event Manager recognition by NIEM Pune for outstanding event organization, leadership, and operational execution."
     },
     {
       title: "IQAC Student Coordinator Award",

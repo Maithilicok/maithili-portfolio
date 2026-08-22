@@ -16,13 +16,25 @@ export default function AllProjectsView({ onBack }) {
       glowHover: "hover:shadow-[0_0_60px_-5px_rgba(168,85,247,0.5)] hover:border-purple-500/70"
     },
     {
+      id: "contexta",
+      name: "Contexta",
+      title: "Contexta — Document Intelligence RAG",
+      description: "A Retrieval-Augmented Generation (RAG) platform enabling instant natural-language Q&A over PDF documents using Gemini AI & Qdrant vector database.",
+      image: "/images/contexta_user.png",
+      tags: ["Gemini AI", "Qdrant DB", "RAG Pipeline", "3072D Embeddings", "Node.js", "Express"],
+      liveUrl: "https://contexta-ai-pdf.vercel.app/",
+      githubUrl: "https://github.com/Maithilicok/contexta-rag-learning",
+      bgGradient: "bg-gradient-to-br from-emerald-950 via-teal-950 to-black",
+      glowHover: "hover:shadow-[0_0_60px_-5px_rgba(16,185,129,0.5)] hover:border-emerald-500/70"
+    },
+    {
       id: "brevio",
       name: "Brevio",
       title: "Brevio — Cyber URL Shortener & Analytics",
       description: "A full-stack URL shortener with a live analytics dashboard, collision-safe short-ID generation, and QR code tracking per link.",
       image: "/images/spiel_user.png",
       tags: ["LINK_INJECTOR", "LINK_DATABASE", "Click Analytics", "Node.js", "MongoDB", "QR Engine"],
-      liveUrl: "https://brevio-cyber.onrender.com",
+      liveUrl: "https://brevio-url-shortner.onrender.com/",
       githubUrl: "https://github.com/Maithilicok/Brevio",
       bgGradient: "bg-gradient-to-br from-teal-950 via-cyan-950 to-black",
       glowHover: "hover:shadow-[0_0_60px_-5px_rgba(6,182,212,0.5)] hover:border-cyan-500/70"
